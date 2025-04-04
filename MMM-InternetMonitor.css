@@ -1,0 +1,76 @@
+/* MMM-InternetMonitor.css */
+
+.mmm-internet-monitor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+.mmm-internet-monitor .status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.mmm-internet-monitor .status.connected {
+  color: #88c0d0;
+}
+
+.mmm-internet-monitor .status.disconnected {
+  color: #bf616a;
+}
+
+.mmm-internet-monitor .status i {
+  margin-right: 10px;
+}
+
+.mmm-internet-monitor .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+.mmm-internet-monitor .detail-item {
+  margin: 2px 0;
+}
+
+.mmm-internet-monitor .history {
+  display: flex;
+  margin-top: 5px;
+}
+
+.mmm-internet-monitor .history-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.mmm-internet-monitor .history-dot.connected {
+  background-color: #a3be8c;
+}
+
+.mmm-internet-monitor .history-dot.disconnected {
+  background-color: #bf616a;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mmm-internet-monitor .status.disconnected i {
+  animation: pulse 2s infinite;
+}

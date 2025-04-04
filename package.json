@@ -1,0 +1,20 @@
+{
+	"name": "mmm-internetmonitor",
+	"version": "1.0.0",
+	"description": "A MagicMirror module that monitors actual internet connectivity using ping and HTTP requests",
+	"main": "MMM-InternetMonitor.js",
+	"author": "Efkan",
+	"license": "MIT",
+	"keywords": [
+		"magicmirror",
+		"internet",
+		"connectivity",
+		"monitor",
+		"network",
+		"status"
+	],
+	"dependencies": {},
+	"engines": {
+		"node": ">=14"
+	}
+}
